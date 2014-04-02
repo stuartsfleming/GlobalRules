@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<decisionServices xmlns="http://xmlns.oracle.com/bpel/rules" name="SetAppGlobals">
+    <ruleEngineProvider provider="Oracle_11.0.0.0.0" name="OracleRulesSDK">
+        <repository type="SCA-Archive">
+            <path>bpmSetGlobals/oracle/rules/bpmsetglobals/SetAppGlobals.rules</path>
+        </repository>
+    </ruleEngineProvider>
+    <decisionService name="SetAppGlobals_DecisionService" ruleEngineProviderReference="OracleRulesSDK" targetNamespace="http://xmlns.oracle.com/SetAppGlobals/SetAppGlobals_DecisionService">
+        <catalog>SetAppGlobals</catalog>
+        <pattern name="CallFunctionStateless">
+            <arguments>
+                <call>bpmsetglobals.SetAppGlobals.SetAppGlobals_DecisionService</call>
+            </arguments>
+        </pattern>
+        <pattern name="CallFunctionStateful">
+            <arguments>
+                <call>bpmsetglobals.SetAppGlobals.SetAppGlobals_DecisionService</call>
+            </arguments>
+        </pattern>
+    </decisionService>
+</decisionServices>
