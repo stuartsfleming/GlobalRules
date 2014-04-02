@@ -10,7 +10,7 @@
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
-    <xsd:element name="globalOutput">
+    <xsd:element name="globalOutput"> 
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element name="PointsAwarded" type="xsd:int"/>
