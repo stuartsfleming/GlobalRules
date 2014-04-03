@@ -27,8 +27,8 @@
             <ValidationUpdateNumber>1226</ValidationUpdateNumber>
         </Variable>
         <Variable id="G}-1e3d0adf:144e222963b:-7c0e">
-            <Name>gpointsLow</Name>
-            <Alias>gpointsLow</Alias>
+            <Name>gPointsLow</Name>
+            <Alias>gPointsLow</Alias>
             <Visible>true</Visible>
             <CreationUpdateNumber>27</CreationUpdateNumber>
             <IDofType>J}int</IDofType>
@@ -44,11 +44,11 @@
             </Expression>
             <Final>true</Final>
             <System>false</System>
-            <ValidationUpdateNumber>1227</ValidationUpdateNumber>
+            <ValidationUpdateNumber>1289</ValidationUpdateNumber>
         </Variable>
         <Variable id="G}-1e3d0adf:144e222963b:-7c04">
-            <Name>gstatusGold</Name>
-            <Alias>gstatusGold</Alias>
+            <Name>gStatusGold</Name>
+            <Alias>gStatusGold</Alias>
             <Visible>true</Visible>
             <CreationUpdateNumber>50</CreationUpdateNumber>
             <IDofType>J}int</IDofType>
@@ -65,7 +65,7 @@
             </Expression>
             <Final>true</Final>
             <System>false</System>
-            <ValidationUpdateNumber>456</ValidationUpdateNumber>
+            <ValidationUpdateNumber>1290</ValidationUpdateNumber>
         </Variable>
         <Variable id="G}-1e3d0adf:144e222963b:-7c02">
             <Name>gStatusSilver</Name>
@@ -99,15 +99,15 @@
             <IDofBucketSet>G}-3f2f991f:144e6fe8f6a:-7c27</IDofBucketSet>
             <BucketSet>Cost</BucketSet>
             <Expression id="L}393">
-                <Value>100000</Value>
-                <ResolvedValue>100000</ResolvedValue>
+                <Value>100</Value>
+                <ResolvedValue>100</ResolvedValue>
                 <IsConstant>false</IsConstant>
                 <ParameterID>B}nil</ParameterID>
                 <Customizable>true</Customizable>
             </Expression>
             <Final>true</Final>
             <System>false</System>
-            <ValidationUpdateNumber>591</ValidationUpdateNumber>
+            <ValidationUpdateNumber>1353</ValidationUpdateNumber>
         </Variable>
         <Variable id="G}2f117cd:144fb9916fa:-7c2a">
             <Name>gReviewer</Name>
@@ -150,8 +150,8 @@
             <ValidationUpdateNumber>854</ValidationUpdateNumber>
         </Variable>
         <Variable id="G}2f117cd:144fb9916fa:-7c05">
-            <Name>gdateJavaDateFromString</Name>
-            <Alias>gdateJavaDateFromString</Alias>
+            <Name>gDateJavaDateFromString</Name>
+            <Alias>gDateJavaDateFromString</Alias>
             <Visible>true</Visible>
             <CreationUpdateNumber>637</CreationUpdateNumber>
             <IDofType>J}java.util.Calendar</IDofType>
@@ -167,11 +167,11 @@
             </Expression>
             <Final>true</Final>
             <System>false</System>
-            <ValidationUpdateNumber>931</ValidationUpdateNumber>
+            <ValidationUpdateNumber>1291</ValidationUpdateNumber>
         </Variable>
         <Variable id="G}2f117cd:144fb9916fa:-7c02">
-            <Name>gdateXMLDateFromString</Name>
-            <Alias>gdateXMLDateFromString</Alias>
+            <Name>gDateXMLDateFromString</Name>
+            <Alias>gDateXMLDateFromString</Alias>
             <Visible>true</Visible>
             <CreationUpdateNumber>637</CreationUpdateNumber>
             <IDofType>J}java.util.Calendar</IDofType>
@@ -187,11 +187,11 @@
             </Expression>
             <Final>true</Final>
             <System>false</System>
-            <ValidationUpdateNumber>930</ValidationUpdateNumber>
+            <ValidationUpdateNumber>1292</ValidationUpdateNumber>
         </Variable>
         <Variable id="G}2f117cd:144fb9916fa:-7bfe">
-            <Name>gdateCalendarGetInstance</Name>
-            <Alias>gdateCalendarGetInstance</Alias>
+            <Name>gDateCalendarGetInstance</Name>
+            <Alias>gDateCalendarGetInstance</Alias>
             <Visible>true</Visible>
             <CreationUpdateNumber>677</CreationUpdateNumber>
             <IDofType>J}java.util.Calendar</IDofType>
@@ -207,11 +207,11 @@
             </Expression>
             <Final>true</Final>
             <System>false</System>
-            <ValidationUpdateNumber>941</ValidationUpdateNumber>
+            <ValidationUpdateNumber>1293</ValidationUpdateNumber>
         </Variable>
         <Variable id="G}2f117cd:144fb9916fa:-7bfc">
-            <Name>gdateRLlEffectiveDate</Name>
-            <Alias>gdateRLlEffectiveDate</Alias>
+            <Name>gDateRLEffectiveDate</Name>
+            <Alias>gDateRLEffectiveDate</Alias>
             <Visible>true</Visible>
             <CreationUpdateNumber>683</CreationUpdateNumber>
             <IDofType>J}java.util.Calendar</IDofType>
@@ -227,11 +227,11 @@
             </Expression>
             <Final>true</Final>
             <System>false</System>
-            <ValidationUpdateNumber>950</ValidationUpdateNumber>
+            <ValidationUpdateNumber>1294</ValidationUpdateNumber>
         </Variable>
         <Variable id="G}7e819499:14500d4fcad:-7c0f">
-            <Name>gDateNextYearJava</Name>
-            <Alias>gDateNextYearJava</Alias>
+            <Name>gDateJavaDateAddYears</Name>
+            <Alias>gDateJavaDateAddYears</Alias>
             <Visible>true</Visible>
             <CreationUpdateNumber>896</CreationUpdateNumber>
             <IDofType>J}java.util.Calendar</IDofType>
@@ -247,7 +247,7 @@
             </Expression>
             <Final>true</Final>
             <System>false</System>
-            <ValidationUpdateNumber>983</ValidationUpdateNumber>
+            <ValidationUpdateNumber>1273</ValidationUpdateNumber>
         </Variable>
         <Variable id="G}7e819499:14500d4fcad:-7c0a">
             <Name>gDateNextYearXML</Name>
@@ -270,8 +270,8 @@
             <ValidationUpdateNumber>956</ValidationUpdateNumber>
         </Variable>
         <Variable id="G}7e819499:14500d4fcad:-7be5">
-            <Name>gDateXMLGregorianCalendar</Name>
-            <Alias>gDateXMLGregorianCalendar</Alias>
+            <Name>gDateXMLGregorianCalendarFromString</Name>
+            <Alias>gDateXMLGregorianCalendarFromString</Alias>
             <Visible>true</Visible>
             <CreationUpdateNumber>1019</CreationUpdateNumber>
             <IDofType>J}javax.xml.datatype.XMLGregorianCalendar</IDofType>
@@ -287,11 +287,11 @@
             </Expression>
             <Final>true</Final>
             <System>false</System>
-            <ValidationUpdateNumber>1168</ValidationUpdateNumber>
+            <ValidationUpdateNumber>1286</ValidationUpdateNumber>
         </Variable>
         <Function id="G}2f117cd:144fb9916fa:-7c35">
-            <Name>fnAddYeartoCalendar</Name>
-            <Alias>fn.AddYeartoCalendar</Alias>
+            <Name>fnAddYearstoCalendar</Name>
+            <Alias>fn.AddYearstoCalendar</Alias>
             <Description>003</Description>
             <Visible>true</Visible>
             <CreationUpdateNumber>341</CreationUpdateNumber>
@@ -300,44 +300,38 @@
             <Type>Calendar</Type>
             <IDofBucketSet>B}nil</IDofBucketSet>
             <Form>Structured</Form>
-            <Action id="L}941">
-                <Form>Assign New</Form>
-                <Target>Calendar</Target>
-                <ResolvedTarget>`J}java.util.Calendar`</ResolvedTarget>
-                <Expression id="L}942">
-                    <Value>Calendar.getInstance()</Value>
-                    <ResolvedValue>`J}java.util.Calendar`.`J}public static java.util.Calendar java.util.Calendar.getInstance()`()</ResolvedValue>
-                    <IsConstant>false</IsConstant>
-                    <ParameterID>B}nil</ParameterID>
-                    <Customizable>false</Customizable>
-                </Expression>
-                <Variable>SSFtempDate</Variable>
-            </Action>
+            <FormalParameter id="G}-34fe839a:14525387f69:-7c0d">
+                <Name>cal</Name>
+                <Alias>cal</Alias>
+                <Visible>true</Visible>
+                <CreationUpdateNumber>1370</CreationUpdateNumber>
+                <IDofType>J}java.util.Calendar</IDofType>
+                <ListContentID>B}nil</ListContentID>
+                <Type>Calendar</Type>
+                <IDofBucketSet>B}nil</IDofBucketSet>
+            </FormalParameter>
+            <FormalParameter id="G}-34fe839a:14525387f69:-7c0c">
+                <Name>years</Name>
+                <Alias>years</Alias>
+                <Visible>true</Visible>
+                <CreationUpdateNumber>1375</CreationUpdateNumber>
+                <IDofType>J}int</IDofType>
+                <ListContentID>B}nil</ListContentID>
+                <Type>int</Type>
+                <IDofBucketSet>B}nil</IDofBucketSet>
+            </FormalParameter>
             <Action id="L}957">
                 <Form>Assign New</Form>
                 <Target>Calendar</Target>
                 <ResolvedTarget>`J}java.util.Calendar`</ResolvedTarget>
                 <Expression id="L}958">
-                    <Value>JavaDate.add days to(SSFtempDate,365)</Value>
-                    <ResolvedValue>`J}oracle.rules.rl.extensions.JavaDate`.`J}public static java.util.Calendar oracle.rules.rl.extensions.JavaDate.addDaysTo(java.util.Calendar,int)`(`L}941`,365)</ResolvedValue>
+                    <Value>JavaDate.add years to(cal,  years)</Value>
+                    <ResolvedValue>`J}oracle.rules.rl.extensions.JavaDate`.`J}public static java.util.Calendar oracle.rules.rl.extensions.JavaDate.addYearsTo(java.util.Calendar,int)`(`G}-34fe839a:14525387f69:-7c0d`,  `G}-34fe839a:14525387f69:-7c0c`)</ResolvedValue>
                     <IsConstant>false</IsConstant>
                     <ParameterID>B}nil</ParameterID>
                     <Customizable>false</Customizable>
                 </Expression>
                 <Variable>SSFDateNew</Variable>
-            </Action>
-            <Action id="L}1011">
-                <Form>Assign New</Form>
-                <Target>int</Target>
-                <ResolvedTarget>`J}int`</ResolvedTarget>
-                <Expression id="L}1014">
-                    <Value>Duration.days between(  SSFtempDate , SSFDateNew )</Value>
-                    <ResolvedValue>`J}oracle.rules.sdk2.extensions.OracleDuration`.`J}public static int oracle.rules.sdk2.extensions.OracleDuration.daysBetween(oracle.jbo.domain.Timestamp,oracle.jbo.domain.Timestamp)`(  `L}941` , `L}957` )</ResolvedValue>
-                    <IsConstant>false</IsConstant>
-                    <ParameterID>B}nil</ParameterID>
-                    <Customizable>false</Customizable>
-                </Expression>
-                <Variable>MyDuration</Variable>
             </Action>
             <Action id="L}1983">
                 <Form>Call</Form>
@@ -352,30 +346,17 @@
                     <Customizable>false</Customizable>
                 </Expression>
             </Action>
-            <Action id="L}2050">
-                <Form>Call</Form>
-                <Target>print</Target>
-                <ResolvedTarget>`B}function.println`</ResolvedTarget>
-                <Expression id="L}2051">
-                    <Value>MyDuration</Value>
-                    <ResolvedValue>`L}1011`</ResolvedValue>
-                    <IsConstant>false</IsConstant>
-                    <ParameterAlias>message</ParameterAlias>
-                    <ParameterID>B}function.println_message</ParameterID>
-                    <Customizable>false</Customizable>
-                </Expression>
-            </Action>
             <Action id="L}2005">
                 <Form>Return</Form>
                 <Expression id="L}2006">
-                    <Value>SSFtempDate</Value>
-                    <ResolvedValue>`L}941`</ResolvedValue>
+                    <Value>SSFDateNew</Value>
+                    <ResolvedValue>`L}957`</ResolvedValue>
                     <IsConstant>false</IsConstant>
                     <ParameterID>B}nil</ParameterID>
                     <Customizable>false</Customizable>
                 </Expression>
             </Action>
-            <ValidationUpdateNumber>1206</ValidationUpdateNumber>
+            <ValidationUpdateNumber>1383</ValidationUpdateNumber>
         </Function>
         <Function id="G}7e819499:14500d4fcad:-7c23">
             <Name>fnRuleTest</Name>
@@ -431,8 +412,8 @@
                 <Target>gInput.totalCost</Target>
                 <ResolvedTarget>`L}2065`.`J}org.example.Input.{totalCost}`</ResolvedTarget>
                 <Expression id="L}2100">
-                    <Value>1000</Value>
-                    <ResolvedValue>1000</ResolvedValue>
+                    <Value>5</Value>
+                    <ResolvedValue>5</ResolvedValue>
                     <IsConstant>false</IsConstant>
                     <ParameterID>B}nil</ParameterID>
                     <Customizable>false</Customizable>
@@ -443,7 +424,7 @@
                 <Target>gInput.custAwardType</Target>
                 <ResolvedTarget>`L}2065`.`J}org.example.Input.{custAwardType}`</ResolvedTarget>
                 <Expression id="L}2148">
-                    <Value>gstatusGold</Value>
+                    <Value>gStatusGold</Value>
                     <ResolvedValue>`G}-1e3d0adf:144e222963b:-7c04`</ResolvedValue>
                     <IsConstant>false</IsConstant>
                     <ParameterID>B}nil</ParameterID>
@@ -485,8 +466,47 @@
                     <Target>print</Target>
                     <ResolvedTarget>`B}function.println`</ResolvedTarget>
                     <Expression id="L}2190">
-                        <Value>gOutput.newStatus</Value>
-                        <ResolvedValue>`L}2175`.`J}org.example.GlobalOutput.{newStatus}`</ResolvedValue>
+                        <Value>&quot;new Status is:  &quot; + gOutput.newStatus</Value>
+                        <ResolvedValue>&quot;new Status is:  &quot; + `L}2175`.`J}org.example.GlobalOutput.{newStatus}`</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>message</ParameterAlias>
+                        <ParameterID>B}function.println_message</ParameterID>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                </Action>
+                <Action id="L}3065">
+                    <Form>Call</Form>
+                    <Target>print</Target>
+                    <ResolvedTarget>`B}function.println`</ResolvedTarget>
+                    <Expression id="L}3068">
+                        <Value>&quot;new pointsAwarded  is &quot; + gOutput.pointsAwarded</Value>
+                        <ResolvedValue>&quot;new pointsAwarded  is &quot; + `L}2175`.`J}org.example.GlobalOutput.{pointsAwarded}`</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>message</ParameterAlias>
+                        <ParameterID>B}function.println_message</ParameterID>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                </Action>
+                <Action id="L}3074">
+                    <Form>Call</Form>
+                    <Target>print</Target>
+                    <ResolvedTarget>`B}function.println`</ResolvedTarget>
+                    <Expression id="L}3077">
+                        <Value>&quot;new reviewer is:  &quot; + gOutput.reviewer</Value>
+                        <ResolvedValue>&quot;new reviewer is:  &quot; + `L}2175`.`J}org.example.GlobalOutput.{reviewer}`</ResolvedValue>
+                        <IsConstant>false</IsConstant>
+                        <ParameterAlias>message</ParameterAlias>
+                        <ParameterID>B}function.println_message</ParameterID>
+                        <Customizable>false</Customizable>
+                    </Expression>
+                </Action>
+                <Action id="L}3082">
+                    <Form>Call</Form>
+                    <Target>print</Target>
+                    <ResolvedTarget>`B}function.println`</ResolvedTarget>
+                    <Expression id="L}3085">
+                        <Value>&quot;new Date is: &quot; +  gOutput.expires.year + &quot; &quot; + gOutput.expires.month   +   &quot; &quot; + gOutput.expires.day</Value>
+                        <ResolvedValue>&quot;new Date is: &quot; +  `L}2175`.`J}org.example.GlobalOutput.{expires}`.`J}javax.xml.datatype.XMLGregorianCalendar.{year}` + &quot; &quot; + `L}2175`.`J}org.example.GlobalOutput.{expires}`.`J}javax.xml.datatype.XMLGregorianCalendar.{month}`   +   &quot; &quot; + `L}2175`.`J}org.example.GlobalOutput.{expires}`.`J}javax.xml.datatype.XMLGregorianCalendar.{day}`</ResolvedValue>
                         <IsConstant>false</IsConstant>
                         <ParameterAlias>message</ParameterAlias>
                         <ParameterID>B}function.println_message</ParameterID>
@@ -504,24 +524,39 @@
                     <Customizable>false</Customizable>
                 </Expression>
             </Action>
-            <ValidationUpdateNumber>1207</ValidationUpdateNumber>
+            <ValidationUpdateNumber>1319</ValidationUpdateNumber>
         </Function>
         <Function id="G}7e819499:14500d4fcad:-7bff">
-            <Name>fnAddYeartoCalendarTest</Name>
-            <Alias>fn.AddYeartoCalendarTest</Alias>
+            <Name>testAddYearstoCalendarTest</Name>
+            <Alias>test.AddYearstoCalendarTest</Alias>
             <Description>004</Description>
             <Visible>true</Visible>
             <CreationUpdateNumber>963</CreationUpdateNumber>
             <IDofType>J}boolean</IDofType>
             <ListContentID>B}nil</ListContentID>
             <Type>boolean</Type>
-            <IDofBucketSet>B}bbs</IDofBucketSet>
-            <BucketSet>boolean</BucketSet>
+            <IDofBucketSet>B}nil</IDofBucketSet>
             <Form>Structured</Form>
             <Action id="L}2380">
                 <Form>Call</Form>
-                <Target>fn.AddYeartoCalendar</Target>
+                <Target>fn.AddYearstoCalendar</Target>
                 <ResolvedTarget>`G}2f117cd:144fb9916fa:-7c35`</ResolvedTarget>
+                <Expression id="L}3200">
+                    <Value>Calendar.getInstance()</Value>
+                    <ResolvedValue>`J}java.util.Calendar`.`J}public static java.util.Calendar java.util.Calendar.getInstance()`()</ResolvedValue>
+                    <IsConstant>false</IsConstant>
+                    <ParameterAlias>cal</ParameterAlias>
+                    <ParameterID>G}-34fe839a:14525387f69:-7c0d</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Expression id="L}3211">
+                    <Value>3</Value>
+                    <ResolvedValue>3</ResolvedValue>
+                    <IsConstant>false</IsConstant>
+                    <ParameterAlias>years</ParameterAlias>
+                    <ParameterID>G}-34fe839a:14525387f69:-7c0c</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
             </Action>
             <Action id="L}2385">
                 <Form>Return</Form>
@@ -533,7 +568,7 @@
                     <Customizable>false</Customizable>
                 </Expression>
             </Action>
-            <ValidationUpdateNumber>1208</ValidationUpdateNumber>
+            <ValidationUpdateNumber>1381</ValidationUpdateNumber>
         </Function>
         <Function id="G}7e819499:14500d4fcad:-7bdf">
             <Name>fnAddYearsToXMLGregCal</Name>
@@ -557,8 +592,8 @@
                 <IDofBucketSet>B}nil</IDofBucketSet>
             </FormalParameter>
             <FormalParameter id="G}-7819fefa:1450f7cb3cc:-7c05">
-                <Name>numYears</Name>
-                <Alias>numYears</Alias>
+                <Name>years</Name>
+                <Alias>years</Alias>
                 <Visible>true</Visible>
                 <CreationUpdateNumber>1235</CreationUpdateNumber>
                 <IDofType>J}java.lang.Integer</IDofType>
@@ -571,7 +606,7 @@
                 <Target>XMLGregorianCalendar</Target>
                 <ResolvedTarget>`J}javax.xml.datatype.XMLGregorianCalendar`</ResolvedTarget>
                 <Expression id="L}2453">
-                    <Value>XMLDate.add years to(XMLGregCal,numYears)</Value>
+                    <Value>XMLDate.add years to(XMLGregCal,years)</Value>
                     <ResolvedValue>`J}oracle.rules.rl.extensions.XMLDate`.`J}public static javax.xml.datatype.XMLGregorianCalendar oracle.rules.rl.extensions.XMLDate.addYearsTo(javax.xml.datatype.XMLGregorianCalendar,int)`(`G}-7819fefa:1450f7cb3cc:-7c0f`,`G}-7819fefa:1450f7cb3cc:-7c05`)</ResolvedValue>
                     <IsConstant>false</IsConstant>
                     <ParameterID>B}nil</ParameterID>
@@ -602,26 +637,25 @@
                     <Customizable>false</Customizable>
                 </Expression>
             </Action>
-            <ValidationUpdateNumber>1238</ValidationUpdateNumber>
+            <ValidationUpdateNumber>1384</ValidationUpdateNumber>
         </Function>
         <Function id="G}-7819fefa:1450f7cb3cc:-7c21">
-            <Name>fnAddYearToXMLGregCalTest</Name>
-            <Alias>fn.addYearToXMLGregCalTest</Alias>
+            <Name>testAddYearsToXMLGregCalTest</Name>
+            <Alias>test.addYearsToXMLGregCalTest</Alias>
             <Description>002</Description>
             <Visible>true</Visible>
             <CreationUpdateNumber>1092</CreationUpdateNumber>
             <IDofType>J}boolean</IDofType>
             <ListContentID>B}nil</ListContentID>
             <Type>boolean</Type>
-            <IDofBucketSet>B}bbs</IDofBucketSet>
-            <BucketSet>boolean</BucketSet>
+            <IDofBucketSet>B}nil</IDofBucketSet>
             <Form>Structured</Form>
             <Action id="L}2940">
                 <Form>Call</Form>
                 <Target>print</Target>
                 <ResolvedTarget>`B}function.println`</ResolvedTarget>
                 <Expression id="L}2945">
-                    <Value>gDateXMLGregorianCalendar</Value>
+                    <Value>gDateXMLGregorianCalendarFromString</Value>
                     <ResolvedValue>`G}7e819499:14500d4fcad:-7be5`</ResolvedValue>
                     <IsConstant>false</IsConstant>
                     <ParameterAlias>message</ParameterAlias>
@@ -634,7 +668,7 @@
                 <Target>XMLGregorianCalendar</Target>
                 <ResolvedTarget>`J}javax.xml.datatype.XMLGregorianCalendar`</ResolvedTarget>
                 <Expression id="L}2613">
-                    <Value>fn.AddYearsToXMLGregCal(gDateXMLGregorianCalendar, 2)</Value>
+                    <Value>fn.AddYearsToXMLGregCal(gDateXMLGregorianCalendarFromString, 2)</Value>
                     <ResolvedValue>`G}7e819499:14500d4fcad:-7bdf`(`G}7e819499:14500d4fcad:-7be5`, 2)</ResolvedValue>
                     <IsConstant>false</IsConstant>
                     <ParameterID>B}nil</ParameterID>
@@ -665,25 +699,36 @@
                     <Customizable>false</Customizable>
                 </Expression>
             </Action>
-            <ValidationUpdateNumber>1249</ValidationUpdateNumber>
+            <ValidationUpdateNumber>1363</ValidationUpdateNumber>
         </Function>
         <Function id="G}-7819fefa:1450f7cb3cc:-7c12">
-            <Name>fnConvert</Name>
-            <Alias>fn.Convert</Alias>
+            <Name>fnConvertDateCalendartoGregCal</Name>
+            <Alias>fn.ConvertDateCalendartoGregCal</Alias>
+            <Description>000a</Description>
             <Visible>true</Visible>
             <CreationUpdateNumber>1171</CreationUpdateNumber>
-            <IDofType>J}boolean</IDofType>
+            <IDofType>J}javax.xml.datatype.XMLGregorianCalendar</IDofType>
             <ListContentID>B}nil</ListContentID>
-            <Type>boolean</Type>
+            <Type>XMLGregorianCalendar</Type>
             <IDofBucketSet>B}nil</IDofBucketSet>
             <Form>Structured</Form>
+            <FormalParameter id="G}-34fe839a:14525387f69:-7c20">
+                <Name>Calendar</Name>
+                <Alias>Calendar</Alias>
+                <Visible>true</Visible>
+                <CreationUpdateNumber>1320</CreationUpdateNumber>
+                <IDofType>J}java.util.Calendar</IDofType>
+                <ListContentID>B}nil</ListContentID>
+                <Type>Calendar</Type>
+                <IDofBucketSet>B}nil</IDofBucketSet>
+            </FormalParameter>
             <Action id="L}2767">
                 <Form>Assign New</Form>
                 <Target>String</Target>
                 <ResolvedTarget>`J}java.lang.String`</ResolvedTarget>
                 <Expression id="L}2768">
-                    <Value>JavaDate.to datetime string(gdateCalendarGetInstance)</Value>
-                    <ResolvedValue>`J}oracle.rules.rl.extensions.JavaDate`.`J}public static java.lang.String oracle.rules.rl.extensions.JavaDate.toDateTimeString(java.util.Calendar)`(`G}2f117cd:144fb9916fa:-7bfe`)</ResolvedValue>
+                    <Value>JavaDate.to datetime string(Calendar)</Value>
+                    <ResolvedValue>`J}oracle.rules.rl.extensions.JavaDate`.`J}public static java.lang.String oracle.rules.rl.extensions.JavaDate.toDateTimeString(java.util.Calendar)`(`G}-34fe839a:14525387f69:-7c20`)</ResolvedValue>
                     <IsConstant>false</IsConstant>
                     <ParameterID>B}nil</ParameterID>
                     <Customizable>false</Customizable>
@@ -695,8 +740,8 @@
                 <Target>print</Target>
                 <ResolvedTarget>`B}function.println`</ResolvedTarget>
                 <Expression id="L}2778">
-                    <Value>CalendarString</Value>
-                    <ResolvedValue>`L}2767`</ResolvedValue>
+                    <Value>&quot;The date as a string is:  &quot; + CalendarString</Value>
+                    <ResolvedValue>&quot;The date as a string is:  &quot; + `L}2767`</ResolvedValue>
                     <IsConstant>false</IsConstant>
                     <ParameterAlias>message</ParameterAlias>
                     <ParameterID>B}function.println_message</ParameterID>
@@ -729,48 +774,46 @@
                     <Customizable>false</Customizable>
                 </Expression>
             </Action>
-            <Action id="L}2958">
-                <Form>Assign New</Form>
-                <Target>Integer</Target>
-                <ResolvedTarget>`J}java.lang.Integer`</ResolvedTarget>
-                <Expression id="L}2961">
-                    <Value>5</Value>
-                    <ResolvedValue>5</ResolvedValue>
-                    <IsConstant>false</IsConstant>
-                    <ParameterID>B}nil</ParameterID>
-                    <Customizable>false</Customizable>
-                </Expression>
-                <Variable>numYears</Variable>
-            </Action>
-            <Action id="L}2819">
-                <Form>Assign New</Form>
-                <Target>XMLGregorianCalendar</Target>
-                <ResolvedTarget>`J}javax.xml.datatype.XMLGregorianCalendar`</ResolvedTarget>
-                <Expression id="L}2822">
-                    <Value>fn.AddYearsToXMLGregCal( XMLDateConverted , numYears )</Value>
-                    <ResolvedValue>`G}7e819499:14500d4fcad:-7bdf`( `L}2795` , `L}2958` )</ResolvedValue>
-                    <IsConstant>false</IsConstant>
-                    <ParameterID>B}nil</ParameterID>
-                    <Customizable>false</Customizable>
-                </Expression>
-                <Variable>XmlDatePlusYears</Variable>
-            </Action>
-            <Action id="L}2869">
-                <Form>Call</Form>
-                <Target>print</Target>
-                <ResolvedTarget>`B}function.println`</ResolvedTarget>
-                <Expression id="L}2874">
-                    <Value>&quot;now adding 5 years &quot; + XmlDatePlusYears</Value>
-                    <ResolvedValue>&quot;now adding 5 years &quot; + `L}2819`</ResolvedValue>
-                    <IsConstant>false</IsConstant>
-                    <ParameterAlias>message</ParameterAlias>
-                    <ParameterID>B}function.println_message</ParameterID>
-                    <Customizable>false</Customizable>
-                </Expression>
-            </Action>
             <Action id="L}2785">
                 <Form>Return</Form>
                 <Expression id="L}2786">
+                    <Value>XMLDateConverted</Value>
+                    <ResolvedValue>`L}2795`</ResolvedValue>
+                    <IsConstant>false</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Action>
+            <ValidationUpdateNumber>1347</ValidationUpdateNumber>
+        </Function>
+        <Function id="G}-34fe839a:14525387f69:-7c1e">
+            <Name>testConvertDateCalendartoGregCalTest</Name>
+            <Alias>test.ConvertDateCalendartoGregCalTest</Alias>
+            <Description>000b</Description>
+            <Visible>true</Visible>
+            <CreationUpdateNumber>1327</CreationUpdateNumber>
+            <IDofType>J}boolean</IDofType>
+            <ListContentID>B}nil</ListContentID>
+            <Type>boolean</Type>
+            <IDofBucketSet>B}bbs</IDofBucketSet>
+            <BucketSet>boolean</BucketSet>
+            <Form>Structured</Form>
+            <Action id="L}3118">
+                <Form>Call</Form>
+                <Target>fn.ConvertDateCalendartoGregCal</Target>
+                <ResolvedTarget>`G}-7819fefa:1450f7cb3cc:-7c12`</ResolvedTarget>
+                <Expression id="L}3121">
+                    <Value>Calendar.getInstance()</Value>
+                    <ResolvedValue>`J}java.util.Calendar`.`J}public static java.util.Calendar java.util.Calendar.getInstance()`()</ResolvedValue>
+                    <IsConstant>false</IsConstant>
+                    <ParameterAlias>Calendar</ParameterAlias>
+                    <ParameterID>G}-34fe839a:14525387f69:-7c20</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Action>
+            <Action id="L}3134">
+                <Form>Return</Form>
+                <Expression id="L}3135">
                     <Value>true</Value>
                     <ResolvedValue>true</ResolvedValue>
                     <IsConstant>false</IsConstant>
@@ -778,7 +821,7 @@
                     <Customizable>false</Customizable>
                 </Expression>
             </Action>
-            <ValidationUpdateNumber>1258</ValidationUpdateNumber>
+            <ValidationUpdateNumber>1364</ValidationUpdateNumber>
         </Function>
         <JaxbFactType id="J}org.example.Input">
             <Name>org.example.Input</Name>
@@ -1423,7 +1466,7 @@
                 </Expression>
             </Bucket>
             <Bucket id="G}-1e3d0adf:144e222963b:-7c11">
-                <Name>gpointsLow</Name>
+                <Name>gPointsLow</Name>
                 <Alias>10k</Alias>
                 <Visible>true</Visible>
                 <CreationUpdateNumber>20</CreationUpdateNumber>
@@ -1431,7 +1474,7 @@
                 <Otherwise>false</Otherwise>
                 <Excluded>false</Excluded>
                 <Expression id="L}95">
-                    <Value>gpointsLow</Value>
+                    <Value>gPointsLow</Value>
                     <ResolvedValue>`G}-1e3d0adf:144e222963b:-7c0e`</ResolvedValue>
                     <IsConstant>true</IsConstant>
                     <ParameterID>B}nil</ParameterID>
@@ -1440,7 +1483,7 @@
             </Bucket>
             <CalendarForm>Date</CalendarForm>
             <Excluded>false</Excluded>
-            <ValidationUpdateNumber>1227</ValidationUpdateNumber>
+            <ValidationUpdateNumber>1289</ValidationUpdateNumber>
         </BucketSet>
         <BucketSet id="G}-1e3d0adf:144e222963b:-7c0a">
             <Name>CustStatus</Name>
@@ -1604,21 +1647,21 @@
             <RuleFiringLimit>10000</RuleFiringLimit>
             <RuleFiringLimitError>true</RuleFiringLimitError>
         </DecisionFunction>
-        <UpdateNumber>1258</UpdateNumber>
-        <ValidationUpdateNumber>1258</ValidationUpdateNumber>
+        <UpdateNumber>1384</UpdateNumber>
+        <ValidationUpdateNumber>1384</ValidationUpdateNumber>
         <UpdateTime>-9223372036854775808</UpdateTime>
     </DataModel>
     <RuleSet id="G}-1e3d0adf:144e222963b:-7c1d">
         <Name>RuleAssignStatus</Name>
         <Alias>RuleAssignStatus</Alias>
-        <ValidationUpdateNumber>1227</ValidationUpdateNumber>
+        <ValidationUpdateNumber>1390</ValidationUpdateNumber>
         <Customizable>true</Customizable>
         <Active>true</Active>
         <CalendarForm>DateTime</CalendarForm>
         <RuleSheet id="G}-1e3d0adf:144e222963b:-7bfd">
             <Name>assignStatus</Name>
             <Alias>assignStatus</Alias>
-            <ValidationUpdateNumber>1227</ValidationUpdateNumber>
+            <ValidationUpdateNumber>1390</ValidationUpdateNumber>
             <Priority>medium</Priority>
             <Customizable>true</Customizable>
             <Active>true</Active>
@@ -1638,21 +1681,6 @@
                 <FactPath>GlobalInput</FactPath>
                 <FactPathIDs>L}498</FactPathIDs>
             </Pattern>
-            <Pattern id="L}2401">
-                <Form>Fact Type</Form>
-                <FactType>GlobalOutput</FactType>
-                <IDofFactType>J}org.example.GlobalOutput</IDofFactType>
-                <Connective>&amp;&amp;</Connective>
-                <TestForm>Simple</TestForm>
-                <Expression id="L}2402">
-                    <IsConstant>false</IsConstant>
-                    <ParameterID>B}nil</ParameterID>
-                    <Customizable>false</Customizable>
-                </Expression>
-                <Operator>(for each case where)</Operator>
-                <FactPath>GlobalOutput</FactPath>
-                <FactPathIDs>L}2401</FactPathIDs>
-            </Pattern>
             <ShowPatterns>false</ShowPatterns>
             <TreeMode>false</TreeMode>
             <Visible>true</Visible>
@@ -1668,13 +1696,13 @@
                     <BucketIDTable>G}1ee18ec0:144ef11b71c:-7c30</BucketIDTable>
                     <Values>Gold</Values>
                     <ParentDimensionNode>B}nil</ParentDimensionNode>
-                    <ChildDimensionNodes>L}2214 L}1422 L}1435</ChildDimensionNodes>
+                    <ChildDimensionNodes>L}1422 L}1435</ChildDimensionNodes>
                 </DimensionNode>
                 <DimensionNode id="L}1466">
                     <BucketIDTable>G}1ee18ec0:144ef11b71c:-7c2f</BucketIDTable>
                     <Values>Silver</Values>
                     <ParentDimensionNode>B}nil</ParentDimensionNode>
-                    <ChildDimensionNodes>L}2217 L}1411 L}1467</ChildDimensionNodes>
+                    <ChildDimensionNodes>L}1411 L}1467</ChildDimensionNodes>
                 </DimensionNode>
                 <PrivateBucketSet id="G}-3f2f991f:144e6fe8f6a:-7c20">
                     <Visible>true</Visible>
@@ -1704,18 +1732,12 @@
                 <SharedBucketSet>CustStatus</SharedBucketSet>
             </Dimension>
             <Dimension id="L}1408">
-                <Value>gThreshold</Value>
-                <ResolvedValue>`G}-3f2f991f:144e6fe8f6a:-7c29`</ResolvedValue>
+                <Value>GlobalInput.totalCost</Value>
+                <ResolvedValue>`L}498`.`J}org.example.Input.{totalCost}`</ResolvedValue>
                 <IsConstant>false</IsConstant>
                 <ParameterID>B}nil</ParameterID>
                 <Customizable>false</Customizable>
                 <IDofSharedBucketSet>G}-3f2f991f:144e6fe8f6a:-7c27</IDofSharedBucketSet>
-                <DimensionNode id="L}2214">
-                    <BucketIDTable>G}-3f2f991f:144e6fe8f6a:-7c26</BucketIDTable>
-                    <Values>&lt;0</Values>
-                    <ParentDimensionNode>L}1434</ParentDimensionNode>
-                    <ChildDimensionNodes></ChildDimensionNodes>
-                </DimensionNode>
                 <DimensionNode id="L}1422">
                     <BucketIDTable>G}2f117cd:144fb9916fa:-7c22</BucketIDTable>
                     <Values>[0..gThreshold)</Values>
@@ -1726,12 +1748,6 @@
                     <BucketIDTable>G}2f117cd:144fb9916fa:-7c21</BucketIDTable>
                     <Values>&gt;=gThreshold</Values>
                     <ParentDimensionNode>L}1434</ParentDimensionNode>
-                    <ChildDimensionNodes></ChildDimensionNodes>
-                </DimensionNode>
-                <DimensionNode id="L}2217">
-                    <BucketIDTable>G}-3f2f991f:144e6fe8f6a:-7c26</BucketIDTable>
-                    <Values>&lt;0</Values>
-                    <ParentDimensionNode>L}1466</ParentDimensionNode>
                     <ChildDimensionNodes></ChildDimensionNodes>
                 </DimensionNode>
                 <DimensionNode id="L}1411">
@@ -1806,45 +1822,6 @@
                     <Customizable>false</Customizable>
                 </Expression>
                 <AlwaysSelected>false</AlwaysSelected>
-                <DTActionNode id="L}2216">
-                    <Selected>true</Selected>
-                    <Expression id="L}2235">
-                        <Value>gStatusSilver</Value>
-                        <ResolvedValue>`G}-1e3d0adf:144e222963b:-7c02`</ResolvedValue>
-                        <IsConstant>false</IsConstant>
-                        <ParameterAlias>newStatus</ParameterAlias>
-                        <ParameterID>J}org.example.GlobalOutput.{newStatus}</ParameterID>
-                        <DTActionParameterName>newStatus</DTActionParameterName>
-                        <Customizable>false</Customizable>
-                    </Expression>
-                    <Expression id="L}2236">
-                        <Value>gpointsLow</Value>
-                        <ResolvedValue>`G}-1e3d0adf:144e222963b:-7c0e`</ResolvedValue>
-                        <IsConstant>false</IsConstant>
-                        <ParameterAlias>pointsAwarded</ParameterAlias>
-                        <ParameterID>J}org.example.GlobalOutput.{pointsAwarded}</ParameterID>
-                        <DTActionParameterName>pointsAwarded</DTActionParameterName>
-                        <Customizable>false</Customizable>
-                    </Expression>
-                    <Expression id="L}2237">
-                        <Value>gDateXMLGregorianCalendar</Value>
-                        <ResolvedValue>`G}7e819499:14500d4fcad:-7be5`</ResolvedValue>
-                        <IsConstant>false</IsConstant>
-                        <ParameterAlias>expires</ParameterAlias>
-                        <ParameterID>J}org.example.GlobalOutput.{expires}</ParameterID>
-                        <DTActionParameterName>expires</DTActionParameterName>
-                        <Customizable>false</Customizable>
-                    </Expression>
-                    <Expression id="L}2238">
-                        <Value>gReviewer</Value>
-                        <ResolvedValue>`G}2f117cd:144fb9916fa:-7c2a`</ResolvedValue>
-                        <IsConstant>false</IsConstant>
-                        <ParameterAlias>reviewer</ParameterAlias>
-                        <ParameterID>J}org.example.GlobalOutput.{reviewer}</ParameterID>
-                        <DTActionParameterName>reviewer</DTActionParameterName>
-                        <Customizable>false</Customizable>
-                    </Expression>
-                </DTActionNode>
                 <DTActionNode id="L}1498">
                     <Selected>true</Selected>
                     <Expression id="L}1527">
@@ -1857,7 +1834,7 @@
                         <Customizable>false</Customizable>
                     </Expression>
                     <Expression id="L}1528">
-                        <Value>gpointsLow</Value>
+                        <Value>gPointsLow</Value>
                         <ResolvedValue>`G}-1e3d0adf:144e222963b:-7c0e`</ResolvedValue>
                         <IsConstant>false</IsConstant>
                         <ParameterAlias>pointsAwarded</ParameterAlias>
@@ -1866,8 +1843,8 @@
                         <Customizable>false</Customizable>
                     </Expression>
                     <Expression id="L}1529">
-                        <Value>GlobalOutput.expires</Value>
-                        <ResolvedValue>`L}2401`.`J}org.example.GlobalOutput.{expires}`</ResolvedValue>
+                        <Value>fn.AddYearsToXMLGregCal( GlobalInput.submitDate , 2 )</Value>
+                        <ResolvedValue>`G}7e819499:14500d4fcad:-7bdf`( `L}498`.`J}org.example.Input.{submitDate}` , 2 )</ResolvedValue>
                         <IsConstant>false</IsConstant>
                         <ParameterAlias>expires</ParameterAlias>
                         <ParameterID>J}org.example.GlobalOutput.{expires}</ParameterID>
@@ -1875,8 +1852,8 @@
                         <Customizable>false</Customizable>
                     </Expression>
                     <Expression id="L}1530">
-                        <Value>gReviewer</Value>
-                        <ResolvedValue>`G}2f117cd:144fb9916fa:-7c2a`</ResolvedValue>
+                        <Value>&quot;R1&quot;</Value>
+                        <ResolvedValue>&quot;R1&quot;</ResolvedValue>
                         <IsConstant>false</IsConstant>
                         <ParameterAlias>reviewer</ParameterAlias>
                         <ParameterID>J}org.example.GlobalOutput.{reviewer}</ParameterID>
@@ -1887,7 +1864,7 @@
                 <DTActionNode id="L}1499">
                     <Selected>true</Selected>
                     <Expression id="L}1531">
-                        <Value>gstatusGold</Value>
+                        <Value>gStatusGold</Value>
                         <ResolvedValue>`G}-1e3d0adf:144e222963b:-7c04`</ResolvedValue>
                         <IsConstant>false</IsConstant>
                         <ParameterAlias>newStatus</ParameterAlias>
@@ -1905,8 +1882,8 @@
                         <Customizable>false</Customizable>
                     </Expression>
                     <Expression id="L}1533">
-                        <Value>GlobalOutput.expires</Value>
-                        <ResolvedValue>`L}2401`.`J}org.example.GlobalOutput.{expires}`</ResolvedValue>
+                        <Value>fn.AddYearsToXMLGregCal( GlobalInput.submitDate , 2 )</Value>
+                        <ResolvedValue>`G}7e819499:14500d4fcad:-7bdf`( `L}498`.`J}org.example.Input.{submitDate}` , 2 )</ResolvedValue>
                         <IsConstant>false</IsConstant>
                         <ParameterAlias>expires</ParameterAlias>
                         <ParameterID>J}org.example.GlobalOutput.{expires}</ParameterID>
@@ -1914,47 +1891,8 @@
                         <Customizable>false</Customizable>
                     </Expression>
                     <Expression id="L}1534">
-                        <Value>gReviewer</Value>
-                        <ResolvedValue>`G}2f117cd:144fb9916fa:-7c2a`</ResolvedValue>
-                        <IsConstant>false</IsConstant>
-                        <ParameterAlias>reviewer</ParameterAlias>
-                        <ParameterID>J}org.example.GlobalOutput.{reviewer}</ParameterID>
-                        <DTActionParameterName>reviewer</DTActionParameterName>
-                        <Customizable>false</Customizable>
-                    </Expression>
-                </DTActionNode>
-                <DTActionNode id="L}2219">
-                    <Selected>true</Selected>
-                    <Expression id="L}2239">
-                        <Value>gStatusSilver</Value>
-                        <ResolvedValue>`G}-1e3d0adf:144e222963b:-7c02`</ResolvedValue>
-                        <IsConstant>false</IsConstant>
-                        <ParameterAlias>newStatus</ParameterAlias>
-                        <ParameterID>J}org.example.GlobalOutput.{newStatus}</ParameterID>
-                        <DTActionParameterName>newStatus</DTActionParameterName>
-                        <Customizable>false</Customizable>
-                    </Expression>
-                    <Expression id="L}2240">
-                        <Value>gpointsLow</Value>
-                        <ResolvedValue>`G}-1e3d0adf:144e222963b:-7c0e`</ResolvedValue>
-                        <IsConstant>false</IsConstant>
-                        <ParameterAlias>pointsAwarded</ParameterAlias>
-                        <ParameterID>J}org.example.GlobalOutput.{pointsAwarded}</ParameterID>
-                        <DTActionParameterName>pointsAwarded</DTActionParameterName>
-                        <Customizable>false</Customizable>
-                    </Expression>
-                    <Expression id="L}2241">
-                        <Value>GlobalOutput.expires</Value>
-                        <ResolvedValue>`L}2401`.`J}org.example.GlobalOutput.{expires}`</ResolvedValue>
-                        <IsConstant>false</IsConstant>
-                        <ParameterAlias>expires</ParameterAlias>
-                        <ParameterID>J}org.example.GlobalOutput.{expires}</ParameterID>
-                        <DTActionParameterName>expires</DTActionParameterName>
-                        <Customizable>false</Customizable>
-                    </Expression>
-                    <Expression id="L}2242">
-                        <Value>gReviewer</Value>
-                        <ResolvedValue>`G}2f117cd:144fb9916fa:-7c2a`</ResolvedValue>
+                        <Value>&quot;R2&quot;</Value>
+                        <ResolvedValue>&quot;R2&quot;</ResolvedValue>
                         <IsConstant>false</IsConstant>
                         <ParameterAlias>reviewer</ParameterAlias>
                         <ParameterID>J}org.example.GlobalOutput.{reviewer}</ParameterID>
@@ -1974,7 +1912,7 @@
                         <Customizable>false</Customizable>
                     </Expression>
                     <Expression id="L}1536">
-                        <Value>gpointsLow</Value>
+                        <Value>gPointsLow</Value>
                         <ResolvedValue>`G}-1e3d0adf:144e222963b:-7c0e`</ResolvedValue>
                         <IsConstant>false</IsConstant>
                         <ParameterAlias>pointsAwarded</ParameterAlias>
@@ -1983,8 +1921,8 @@
                         <Customizable>false</Customizable>
                     </Expression>
                     <Expression id="L}1537">
-                        <Value>GlobalOutput.expires</Value>
-                        <ResolvedValue>`L}2401`.`J}org.example.GlobalOutput.{expires}`</ResolvedValue>
+                        <Value>gDateXMLGregorianCalendarFromString</Value>
+                        <ResolvedValue>`G}7e819499:14500d4fcad:-7be5`</ResolvedValue>
                         <IsConstant>false</IsConstant>
                         <ParameterAlias>expires</ParameterAlias>
                         <ParameterID>J}org.example.GlobalOutput.{expires}</ParameterID>
@@ -1992,8 +1930,8 @@
                         <Customizable>false</Customizable>
                     </Expression>
                     <Expression id="L}1538">
-                        <Value>gReviewer</Value>
-                        <ResolvedValue>`G}2f117cd:144fb9916fa:-7c2a`</ResolvedValue>
+                        <Value>&quot;R3&quot;</Value>
+                        <ResolvedValue>&quot;R3&quot;</ResolvedValue>
                         <IsConstant>false</IsConstant>
                         <ParameterAlias>reviewer</ParameterAlias>
                         <ParameterID>J}org.example.GlobalOutput.{reviewer}</ParameterID>
@@ -2004,7 +1942,7 @@
                 <DTActionNode id="L}1501">
                     <Selected>true</Selected>
                     <Expression id="L}1539">
-                        <Value>gstatusGold</Value>
+                        <Value>gStatusGold</Value>
                         <ResolvedValue>`G}-1e3d0adf:144e222963b:-7c04`</ResolvedValue>
                         <IsConstant>false</IsConstant>
                         <ParameterAlias>newStatus</ParameterAlias>
@@ -2022,8 +1960,8 @@
                         <Customizable>false</Customizable>
                     </Expression>
                     <Expression id="L}1541">
-                        <Value>GlobalOutput.expires</Value>
-                        <ResolvedValue>`L}2401`.`J}org.example.GlobalOutput.{expires}`</ResolvedValue>
+                        <Value>gDateXMLGregorianCalendarFromString</Value>
+                        <ResolvedValue>`G}7e819499:14500d4fcad:-7be5`</ResolvedValue>
                         <IsConstant>false</IsConstant>
                         <ParameterAlias>expires</ParameterAlias>
                         <ParameterID>J}org.example.GlobalOutput.{expires}</ParameterID>
@@ -2031,8 +1969,8 @@
                         <Customizable>false</Customizable>
                     </Expression>
                     <Expression id="L}1542">
-                        <Value>gReviewer</Value>
-                        <ResolvedValue>`G}2f117cd:144fb9916fa:-7c2a`</ResolvedValue>
+                        <Value>&quot;R4&quot;</Value>
+                        <ResolvedValue>&quot;R4&quot;</ResolvedValue>
                         <IsConstant>false</IsConstant>
                         <ParameterAlias>reviewer</ParameterAlias>
                         <ParameterID>J}org.example.GlobalOutput.{reviewer}</ParameterID>
@@ -2041,14 +1979,6 @@
                     </Expression>
                 </DTActionNode>
             </DTAction>
-            <DTRule id="L}2215">
-                <Override></Override>
-                <RunBefore></RunBefore>
-                <NoConflict></NoConflict>
-                <OverriddenBy></OverriddenBy>
-                <RunAfter></RunAfter>
-                <CreationUpdateNumber>895</CreationUpdateNumber>
-            </DTRule>
             <DTRule id="L}1423">
                 <Override></Override>
                 <RunBefore></RunBefore>
@@ -2064,14 +1994,6 @@
                 <OverriddenBy></OverriddenBy>
                 <RunAfter></RunAfter>
                 <CreationUpdateNumber>520</CreationUpdateNumber>
-            </DTRule>
-            <DTRule id="L}2218">
-                <Override></Override>
-                <RunBefore></RunBefore>
-                <NoConflict></NoConflict>
-                <OverriddenBy></OverriddenBy>
-                <RunAfter></RunAfter>
-                <CreationUpdateNumber>895</CreationUpdateNumber>
             </DTRule>
             <DTRule id="L}673">
                 <Override></Override>
@@ -2096,7 +2018,7 @@
         <VisibilityFilterEnabled>false</VisibilityFilterEnabled>
         <CreationUpdateNumber>4</CreationUpdateNumber>
     </RuleSet>
-    <ValidationUpdateNumber>1258</ValidationUpdateNumber>
-    <UpdateNumber>1258</UpdateNumber>
+    <ValidationUpdateNumber>1390</ValidationUpdateNumber>
+    <UpdateNumber>1390</UpdateNumber>
     <ResourceBundle>SetAppGlobalsTranslations</ResourceBundle>
 </RuleDictionary>
