@@ -923,8 +923,8 @@
                 <Target>print</Target>
                 <ResolvedTarget>`B}function.println`</ResolvedTarget>
                 <Expression id="L}3420">
-                    <Value>&quot;toString: &quot; + cal2.toString()</Value>
-                    <ResolvedValue>&quot;toString: &quot; + `L}3425`.`J}public java.lang.String java.lang.Object.toString()`()</ResolvedValue>
+                    <Value>&quot;Java.util.date to object.toString: &quot; + cal2.toString()</Value>
+                    <ResolvedValue>&quot;Java.util.date to object.toString: &quot; + `L}3425`.`J}public java.lang.String java.lang.Object.toString()`()</ResolvedValue>
                     <IsConstant>false</IsConstant>
                     <ParameterAlias>message</ParameterAlias>
                     <ParameterID>B}function.println_message</ParameterID>
@@ -962,7 +962,8 @@
                 <Target>XMLGregorianCalendar</Target>
                 <ResolvedTarget>`J}javax.xml.datatype.XMLGregorianCalendar`</ResolvedTarget>
                 <Expression id="L}3596">
-                    <Value>DateActions.getXMLGC_DateYMD(XMLGregorianCalendar)</Value>
+                    <Value>DateActions.createGregorianCalendarDate()</Value>
+                    <ResolvedValue>`J}dateactions.DateActions`.`J}public static javax.xml.datatype.XMLGregorianCalendar dateactions.DateActions.createGregorianCalendarDate()`()</ResolvedValue>
                     <IsConstant>false</IsConstant>
                     <ParameterID>B}nil</ParameterID>
                     <Customizable>false</Customizable>
@@ -979,7 +980,7 @@
                     <Customizable>false</Customizable>
                 </Expression>
             </Action>
-            <ValidationUpdateNumber>-1</ValidationUpdateNumber>
+            <ValidationUpdateNumber>1561</ValidationUpdateNumber>
         </Function>
         <JaxbFactType id="J}org.example.Input">
             <Name>org.example.Input</Name>
@@ -1587,48 +1588,6 @@
             <Alias>DateActions</Alias>
             <Visible>true</Visible>
             <CreationUpdateNumber>1543</CreationUpdateNumber>
-            <Method id="J}public static void dateactions.DateActions.main(java.lang.String[])">
-                <Name>main</Name>
-                <Alias>main</Alias>
-                <Visible>true</Visible>
-                <CreationUpdateNumber>1543</CreationUpdateNumber>
-                <OverloadedParameter id="G}-6e3e9b21:145346b0d99:-7c2f">
-                    <CreationUpdateNumber>1543</CreationUpdateNumber>
-                    <IDsOfType>J}[Ljava.lang.String;</IDsOfType>
-                </OverloadedParameter>
-                <Modifiers id="L}3550">
-                    <CreationUpdateNumber>1543</CreationUpdateNumber>
-                    <Access>1</Access>
-                    <isStatic>true</isStatic>
-                    <isFinal>false</isFinal>
-                    <isAbstract>false</isAbstract>
-                </Modifiers>
-                <Static>true</Static>
-                <IDofType>J}void</IDofType>
-                <Type>void</Type>
-                <IDofBucketSet>B}nil</IDofBucketSet>
-            </Method>
-            <Method id="J}public static javax.xml.datatype.XMLGregorianCalendar dateactions.DateActions.getXMLGC_DateYMD(javax.xml.datatype.XMLGregorianCalendar)">
-                <Name>getXMLGC_DateYMD</Name>
-                <Alias>getXMLGC_DateYMD</Alias>
-                <Visible>true</Visible>
-                <CreationUpdateNumber>1543</CreationUpdateNumber>
-                <OverloadedParameter id="G}-6e3e9b21:145346b0d99:-7c2e">
-                    <CreationUpdateNumber>1543</CreationUpdateNumber>
-                    <IDsOfType>J}javax.xml.datatype.XMLGregorianCalendar</IDsOfType>
-                </OverloadedParameter>
-                <Modifiers id="L}3552">
-                    <CreationUpdateNumber>1543</CreationUpdateNumber>
-                    <Access>1</Access>
-                    <isStatic>true</isStatic>
-                    <isFinal>false</isFinal>
-                    <isAbstract>false</isAbstract>
-                </Modifiers>
-                <Static>true</Static>
-                <IDofType>J}javax.xml.datatype.XMLGregorianCalendar</IDofType>
-                <Type>XMLGregorianCalendar</Type>
-                <IDofBucketSet>B}nil</IDofBucketSet>
-            </Method>
             <Method id="J}public static javax.xml.datatype.XMLGregorianCalendar dateactions.DateActions.createGregorianCalendarDate()">
                 <Name>createGregorianCalendarDate</Name>
                 <Alias>createGregorianCalendarDate</Alias>
@@ -1768,21 +1727,71 @@
                 <Type>java.util.Date</Type>
                 <IDofBucketSet>B}nil</IDofBucketSet>
             </Method>
-            <Method id="J}public static java.util.Date dateactions.DateActions.FormattingExamples()">
-                <Name>FormattingExamples</Name>
-                <Alias>FormattingExamples</Alias>
+            <Method id="J}public static void dateactions.DateActions.main(java.lang.String[])">
+                <Name>main</Name>
+                <Alias>main</Alias>
                 <Visible>true</Visible>
-                <CreationUpdateNumber>1543</CreationUpdateNumber>
-                <Modifiers id="L}3568">
-                    <CreationUpdateNumber>1543</CreationUpdateNumber>
+                <CreationUpdateNumber>1559</CreationUpdateNumber>
+                <OverloadedParameter id="G}-6e3e9b21:145346b0d99:-7c23">
+                    <CreationUpdateNumber>1559</CreationUpdateNumber>
+                    <IDsOfType>J}[Ljava.lang.String;</IDsOfType>
+                </OverloadedParameter>
+                <Modifiers id="L}3605">
+                    <CreationUpdateNumber>1559</CreationUpdateNumber>
                     <Access>1</Access>
                     <isStatic>true</isStatic>
                     <isFinal>false</isFinal>
                     <isAbstract>false</isAbstract>
                 </Modifiers>
                 <Static>true</Static>
-                <IDofType>J}java.util.Date</IDofType>
-                <Type>java.util.Date</Type>
+                <IDofType>J}void</IDofType>
+                <Type>void</Type>
+                <IDofBucketSet>B}nil</IDofBucketSet>
+            </Method>
+            <Method id="J}public static javax.xml.datatype.XMLGregorianCalendar dateactions.DateActions.xmlGCDateRemoveTstamp(javax.xml.datatype.XMLGregorianCalendar)">
+                <Name>xmlGCDateRemoveTstamp</Name>
+                <Alias>xmlGCDateRemoveTstamp</Alias>
+                <Visible>true</Visible>
+                <CreationUpdateNumber>1559</CreationUpdateNumber>
+                <OverloadedParameter id="G}-6e3e9b21:145346b0d99:-7c22">
+                    <CreationUpdateNumber>1559</CreationUpdateNumber>
+                    <IDsOfType>J}javax.xml.datatype.XMLGregorianCalendar</IDsOfType>
+                </OverloadedParameter>
+                <Modifiers id="L}3607">
+                    <CreationUpdateNumber>1559</CreationUpdateNumber>
+                    <Access>1</Access>
+                    <isStatic>true</isStatic>
+                    <isFinal>false</isFinal>
+                    <isAbstract>false</isAbstract>
+                </Modifiers>
+                <Static>true</Static>
+                <IDofType>J}javax.xml.datatype.XMLGregorianCalendar</IDofType>
+                <Type>XMLGregorianCalendar</Type>
+                <IDofBucketSet>B}nil</IDofBucketSet>
+            </Method>
+            <Method id="J}public static java.lang.String dateactions.DateActions.getDateStrings(java.lang.String,java.util.Calendar)">
+                <Name>getDateStrings</Name>
+                <Alias>getDateStrings</Alias>
+                <Visible>true</Visible>
+                <CreationUpdateNumber>1559</CreationUpdateNumber>
+                <OverloadedParameter id="G}-6e3e9b21:145346b0d99:-7c21">
+                    <CreationUpdateNumber>1559</CreationUpdateNumber>
+                    <IDsOfType>J}java.lang.String</IDsOfType>
+                </OverloadedParameter>
+                <OverloadedParameter id="G}-6e3e9b21:145346b0d99:-7c20">
+                    <CreationUpdateNumber>1559</CreationUpdateNumber>
+                    <IDsOfType>J}java.util.Calendar</IDsOfType>
+                </OverloadedParameter>
+                <Modifiers id="L}3609">
+                    <CreationUpdateNumber>1559</CreationUpdateNumber>
+                    <Access>1</Access>
+                    <isStatic>true</isStatic>
+                    <isFinal>false</isFinal>
+                    <isAbstract>false</isAbstract>
+                </Modifiers>
+                <Static>true</Static>
+                <IDofType>J}java.lang.String</IDofType>
+                <Type>String</Type>
                 <IDofBucketSet>B}nil</IDofBucketSet>
             </Method>
             <Constructor id="J}public dateactions.DateActions()">
@@ -1797,14 +1806,14 @@
                 </Modifiers>
             </Constructor>
             <IDofSuperClass>J}java.lang.Object</IDofSuperClass>
-            <ValidationUpdateNumber>1543</ValidationUpdateNumber>
+            <ValidationUpdateNumber>1559</ValidationUpdateNumber>
             <Source>file:/C:/JDeveloper/mywork/git/GlobalRules/DateEvents/deploy/dateActions.jar</Source>
             <IsArray>false</IsArray>
             <IDofArrayComponentType>B}nil</IDofArrayComponentType>
             <SupportXPath>false</SupportXPath>
             <IsInterface>false</IsInterface>
-            <Modifiers id="L}3546">
-                <CreationUpdateNumber>1543</CreationUpdateNumber>
+            <Modifiers id="L}3603">
+                <CreationUpdateNumber>1559</CreationUpdateNumber>
                 <Access>1</Access>
                 <isStatic>false</isStatic>
                 <isFinal>false</isFinal>
@@ -2037,8 +2046,8 @@
             <RuleFiringLimit>10000</RuleFiringLimit>
             <RuleFiringLimitError>true</RuleFiringLimitError>
         </DecisionFunction>
-        <UpdateNumber>1558</UpdateNumber>
-        <ValidationUpdateNumber>-1</ValidationUpdateNumber>
+        <UpdateNumber>1561</UpdateNumber>
+        <ValidationUpdateNumber>1561</ValidationUpdateNumber>
         <UpdateTime>-9223372036854775808</UpdateTime>
     </DataModel>
     <RuleSet id="G}-1e3d0adf:144e222963b:-7c1d">
@@ -2408,7 +2417,7 @@
         <VisibilityFilterEnabled>false</VisibilityFilterEnabled>
         <CreationUpdateNumber>4</CreationUpdateNumber>
     </RuleSet>
-    <ValidationUpdateNumber>-1</ValidationUpdateNumber>
-    <UpdateNumber>1558</UpdateNumber>
+    <ValidationUpdateNumber>1561</ValidationUpdateNumber>
+    <UpdateNumber>1561</UpdateNumber>
     <ResourceBundle>SetAppGlobalsTranslations</ResourceBundle>
 </RuleDictionary>

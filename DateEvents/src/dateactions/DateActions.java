@@ -24,23 +24,9 @@ public class DateActions {
      * @author Javin Paul
      */
 
-    public static XMLGregorianCalendar xmlGCDateRemoveTstamp(XMLGregorianCalendar xgc) {
-        // this removes the timestamp that is appended on an XMLGregorianCalendar
-        // input 1964-02-26-05:00  ouput  YYYY-MM-DD
-        // XMLGregorianCalendar x = DateEvents.getXMLGC_DateOnly(xGCal) ;
-        XMLGregorianCalendar x = null;
-
-        try {
-            x =
-  DatatypeFactory.newInstance().newXMLGregorianCalendarDate(xgc.getYear(), xgc.getMonth(), xgc.getDay(), DatatypeConstants.FIELD_UNDEFINED);
-        } catch (DatatypeConfigurationException e) {
-            e.printStackTrace();
-        }
-        return x;
-    }
 
 
-    public static XMLGregorianCalendar createGregorianCalendarDate() {
+    public static XMLGregorianCalendar createXMLGregorianCalendarDate() {
         // creates a new xgcal date
         GregorianCalendar gcal = new GregorianCalendar();
         XMLGregorianCalendar xgc = null;
@@ -51,6 +37,23 @@ public class DateActions {
         }
         return xgc;
     }
+    
+    public static XMLGregorianCalendar xmlGCDateRemoveTstamp(XMLGregorianCalendar xgc) {
+        // this removes the timestamp that is appended on an XMLGregorianCalendar
+        // input 1964-02-26-05:00  ouput  YYYY-MM-DD
+        // XMLGregorianCalendar x = DateEvents.getXMLGC_DateOnly(xGCal) ;
+        XMLGregorianCalendar x = null;
+
+        try {
+            x =
+    DatatypeFactory.newInstance().newXMLGregorianCalendarDate(xgc.getYear(), xgc.getMonth(), xgc.getDay(), DatatypeConstants.FIELD_UNDEFINED);
+        } catch (DatatypeConfigurationException e) {
+            e.printStackTrace();
+        }
+        return x;
+    }
+    
+    
     /*
          * Converts java.util.Date to javax.xml.datatype.XMLGregorianCalendar
          */
@@ -88,8 +91,6 @@ public class DateActions {
             return null;
         }
         return new Timestamp(xgc.toGregorianCalendar().getTime().getTime());
-
-
     }
 
     public static java.util.Date toJavaUtilDate(XMLGregorianCalendar xgc) {
@@ -107,7 +108,6 @@ public class DateActions {
         String dateString = formatter.format(calendar.getTime());
 
         return dateString;
-
     }
 
     public static java.util.Date getJavaUtilDate() {
