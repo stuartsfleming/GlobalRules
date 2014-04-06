@@ -110,7 +110,7 @@ public class DateEvents {
 
     }
 
-    public static Date getActualDate() {
+    public static java.util.Date getJavaUtilDate() {
         Calendar cal = new GregorianCalendar();
          java.util.Date creationDate = cal.getTime();
          return creationDate ;
@@ -154,7 +154,7 @@ public class DateEvents {
         java.sql.Timestamp t = DateEvents.toJavaSQLTimestamp(xmlDate);
         System.out.println("java.sql.Timestamp from XMLGregorianCalendar: " + javaDate);
 */
-      System.out.println(  DateEvents.getActualDate() );
+      System.out.println(  DateEvents.getJavaUtilDate() );
 
     }
 }

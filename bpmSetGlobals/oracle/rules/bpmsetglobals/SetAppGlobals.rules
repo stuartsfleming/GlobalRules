@@ -913,8 +913,8 @@
                 <Target>Calendar</Target>
                 <ResolvedTarget>`J}java.util.Calendar`</ResolvedTarget>
                 <Expression id="L}3428">
-                    <Value>DateEvents.createGregorianCalendarDate()</Value>
-                    <ResolvedValue>`J}dateevents.DateEvents`.`J}public static javax.xml.datatype.XMLGregorianCalendar dateevents.DateEvents.createGregorianCalendarDate()`()</ResolvedValue>
+                    <Value>DateEvents.getActualDate()</Value>
+                    <ResolvedValue>`J}dateevents.DateEvents`.`J}public static java.util.Date dateevents.DateEvents.getActualDate()`()</ResolvedValue>
                     <IsConstant>false</IsConstant>
                     <ParameterID>B}nil</ParameterID>
                     <Customizable>false</Customizable>
@@ -926,8 +926,8 @@
                 <Target>print</Target>
                 <ResolvedTarget>`B}function.println`</ResolvedTarget>
                 <Expression id="L}3420">
-                    <Value>cal2</Value>
-                    <ResolvedValue>`L}3425`</ResolvedValue>
+                    <Value>cal2.time</Value>
+                    <ResolvedValue>`L}3425`.`J}java.util.Calendar.{time}`</ResolvedValue>
                     <IsConstant>false</IsConstant>
                     <ParameterAlias>message</ParameterAlias>
                     <ParameterID>B}function.println_message</ParameterID>
@@ -949,8 +949,16 @@
             </Action>
             <Action id="L}3505">
                 <Form>Call</Form>
-                <Target>s</Target>
-                <ResolvedTarget>s</ResolvedTarget>
+                <Target>print</Target>
+                <ResolvedTarget>`B}function.println`</ResolvedTarget>
+                <Expression id="L}3509">
+                    <Value>s</Value>
+                    <ResolvedValue>`L}3481`</ResolvedValue>
+                    <IsConstant>false</IsConstant>
+                    <ParameterAlias>message</ParameterAlias>
+                    <ParameterID>B}function.println_message</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
             </Action>
             <Action id="L}3495">
                 <Form>Return</Form>
@@ -2020,7 +2028,7 @@
             <RuleFiringLimit>10000</RuleFiringLimit>
             <RuleFiringLimitError>true</RuleFiringLimitError>
         </DecisionFunction>
-        <UpdateNumber>1527</UpdateNumber>
+        <UpdateNumber>1531</UpdateNumber>
         <ValidationUpdateNumber>-1</ValidationUpdateNumber>
         <UpdateTime>-9223372036854775808</UpdateTime>
     </DataModel>
@@ -2392,6 +2400,6 @@
         <CreationUpdateNumber>4</CreationUpdateNumber>
     </RuleSet>
     <ValidationUpdateNumber>-1</ValidationUpdateNumber>
-    <UpdateNumber>1527</UpdateNumber>
+    <UpdateNumber>1531</UpdateNumber>
     <ResourceBundle>SetAppGlobalsTranslations</ResourceBundle>
 </RuleDictionary>
