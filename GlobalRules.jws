@@ -16,7 +16,7 @@
    </hash>
    <list n="listOfChildren">
       <hash><url n="URL" path="bpmSetGlobals/bpmSetGlobals.jpr"/></hash>
-      <hash><url n="URL" path="DateEvents/DateEvents.jpr"/></hash>
+      <hash><url n="URL" path="DateActions/DateActions.jpr"/></hash>
       <hash><url n="URL" path="git.jpr"/></hash>
    </list>
 </jws:workspace>
