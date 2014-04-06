@@ -267,7 +267,7 @@
             </Expression>
             <Final>true</Final>
             <System>false</System>
-            <ValidationUpdateNumber>1402</ValidationUpdateNumber>
+            <ValidationUpdateNumber>1522</ValidationUpdateNumber>
         </Variable>
         <Variable id="G}7e819499:14500d4fcad:-7be5">
             <Name>gDateXMLGregorianCalendarFromString</Name>
@@ -825,28 +825,15 @@
             <ValidationUpdateNumber>1433</ValidationUpdateNumber>
         </Function>
         <Function id="G}-1684ffab:14532587c2f:-7c2e">
-            <Name>fnJavaExample</Name>
-            <Alias>fn.JavaExample</Alias>
+            <Name>testJavaExampleGetCal</Name>
+            <Alias>test.JavaExampleGetCal</Alias>
             <Visible>true</Visible>
             <CreationUpdateNumber>1411</CreationUpdateNumber>
-            <IDofType>J}java.util.Calendar</IDofType>
+            <IDofType>J}boolean</IDofType>
             <ListContentID>B}nil</ListContentID>
-            <Type>Calendar</Type>
+            <Type>boolean</Type>
             <IDofBucketSet>B}nil</IDofBucketSet>
             <Form>Structured</Form>
-            <Action id="L}3246">
-                <Form>Assign New</Form>
-                <Target>DateEvents</Target>
-                <ResolvedTarget>`J}dateevents.DateEvents`</ResolvedTarget>
-                <Expression id="L}3247">
-                    <Value>new DateEvents()</Value>
-                    <ResolvedValue>new `J}public dateevents.DateEvents()`()</ResolvedValue>
-                    <IsConstant>false</IsConstant>
-                    <ParameterID>B}nil</ParameterID>
-                    <Customizable>false</Customizable>
-                </Expression>
-                <Variable>var</Variable>
-            </Action>
             <Action id="L}3260">
                 <Form>Assign New</Form>
                 <Target>Calendar</Target>
@@ -876,34 +863,6 @@
             <Action id="L}3288">
                 <Form>Return</Form>
                 <Expression id="L}3289">
-                    <Value>cal</Value>
-                    <ResolvedValue>`L}3260`</ResolvedValue>
-                    <IsConstant>false</IsConstant>
-                    <ParameterID>B}nil</ParameterID>
-                    <Customizable>false</Customizable>
-                </Expression>
-            </Action>
-            <ValidationUpdateNumber>1446</ValidationUpdateNumber>
-        </Function>
-        <Function id="G}-1684ffab:14532587c2f:-7c2b">
-            <Name>testJavaExampleTest</Name>
-            <Alias>test.JavaExampleTest</Alias>
-            <Visible>true</Visible>
-            <CreationUpdateNumber>1434</CreationUpdateNumber>
-            <IDofType>J}boolean</IDofType>
-            <ListContentID>B}nil</ListContentID>
-            <Type>boolean</Type>
-            <IDofBucketSet>B}nil</IDofBucketSet>
-            <Form>Structured</Form>
-            <Action id="L}3302">
-                <Form>Call</Form>
-                <Target>fn.JavaExample</Target>
-                <ResolvedTarget>`G}-1684ffab:14532587c2f:-7c2e`</ResolvedTarget>
-                <Variable>var</Variable>
-            </Action>
-            <Action id="L}3316">
-                <Form>Return</Form>
-                <Expression id="L}3317">
                     <Value>true</Value>
                     <ResolvedValue>true</ResolvedValue>
                     <IsConstant>false</IsConstant>
@@ -911,7 +870,99 @@
                     <Customizable>false</Customizable>
                 </Expression>
             </Action>
-            <ValidationUpdateNumber>1445</ValidationUpdateNumber>
+            <ValidationUpdateNumber>1510</ValidationUpdateNumber>
+        </Function>
+        <Function id="G}-1684ffab:14532587c2f:-7c22">
+            <Name>testJavaExamplesMore</Name>
+            <Alias>test.JavaExamplesMore</Alias>
+            <Visible>true</Visible>
+            <CreationUpdateNumber>1475</CreationUpdateNumber>
+            <IDofType>J}boolean</IDofType>
+            <ListContentID>B}nil</ListContentID>
+            <Type>boolean</Type>
+            <IDofBucketSet>B}nil</IDofBucketSet>
+            <Form>Structured</Form>
+            <Action id="L}3403">
+                <Form>Assign New</Form>
+                <Target>XMLGregorianCalendar</Target>
+                <ResolvedTarget>`J}javax.xml.datatype.XMLGregorianCalendar`</ResolvedTarget>
+                <Expression id="L}3404">
+                    <Value>DateEvents.createGregorianCalendarDate()</Value>
+                    <ResolvedValue>`J}dateevents.DateEvents`.`J}public static javax.xml.datatype.XMLGregorianCalendar dateevents.DateEvents.createGregorianCalendarDate()`()</ResolvedValue>
+                    <IsConstant>false</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Variable>cal1</Variable>
+            </Action>
+            <Action id="L}3447">
+                <Form>Call</Form>
+                <Target>print</Target>
+                <ResolvedTarget>`B}function.println`</ResolvedTarget>
+                <Expression id="L}3452">
+                    <Value>&quot;1.  Gregorian calendar &quot; + cal1</Value>
+                    <ResolvedValue>&quot;1.  Gregorian calendar &quot; + `L}3403`</ResolvedValue>
+                    <IsConstant>false</IsConstant>
+                    <ParameterAlias>message</ParameterAlias>
+                    <ParameterID>B}function.println_message</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Action>
+            <Action id="L}3425">
+                <Form>Assign New</Form>
+                <Target>Calendar</Target>
+                <ResolvedTarget>`J}java.util.Calendar`</ResolvedTarget>
+                <Expression id="L}3428">
+                    <Value>DateEvents.createGregorianCalendarDate()</Value>
+                    <ResolvedValue>`J}dateevents.DateEvents`.`J}public static javax.xml.datatype.XMLGregorianCalendar dateevents.DateEvents.createGregorianCalendarDate()`()</ResolvedValue>
+                    <IsConstant>false</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Variable>cal2</Variable>
+            </Action>
+            <Action id="L}3419">
+                <Form>Call</Form>
+                <Target>print</Target>
+                <ResolvedTarget>`B}function.println`</ResolvedTarget>
+                <Expression id="L}3420">
+                    <Value>cal2</Value>
+                    <ResolvedValue>`L}3425`</ResolvedValue>
+                    <IsConstant>false</IsConstant>
+                    <ParameterAlias>message</ParameterAlias>
+                    <ParameterID>B}function.println_message</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Action>
+            <Action id="L}3481">
+                <Form>Assign New</Form>
+                <Target>String</Target>
+                <ResolvedTarget>`J}java.lang.String`</ResolvedTarget>
+                <Expression id="L}3482">
+                    <Value>DateEvents.GregorianCalToString(  DateEvents.createGregorianCalendarDate()  )</Value>
+                    <ResolvedValue>`J}dateevents.DateEvents`.`J}public static java.lang.String dateevents.DateEvents.GregorianCalToString(javax.xml.datatype.XMLGregorianCalendar)`(  `J}dateevents.DateEvents`.`J}public static javax.xml.datatype.XMLGregorianCalendar dateevents.DateEvents.createGregorianCalendarDate()`()  )</ResolvedValue>
+                    <IsConstant>false</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+                <Variable>s</Variable>
+            </Action>
+            <Action id="L}3505">
+                <Form>Call</Form>
+                <Target>s</Target>
+                <ResolvedTarget>s</ResolvedTarget>
+            </Action>
+            <Action id="L}3495">
+                <Form>Return</Form>
+                <Expression id="L}3496">
+                    <Value>true</Value>
+                    <ResolvedValue>true</ResolvedValue>
+                    <IsConstant>false</IsConstant>
+                    <ParameterID>B}nil</ParameterID>
+                    <Customizable>false</Customizable>
+                </Expression>
+            </Action>
+            <ValidationUpdateNumber>-1</ValidationUpdateNumber>
         </Function>
         <JaxbFactType id="J}org.example.Input">
             <Name>org.example.Input</Name>
@@ -1969,8 +2020,8 @@
             <RuleFiringLimit>10000</RuleFiringLimit>
             <RuleFiringLimitError>true</RuleFiringLimitError>
         </DecisionFunction>
-        <UpdateNumber>1446</UpdateNumber>
-        <ValidationUpdateNumber>1446</ValidationUpdateNumber>
+        <UpdateNumber>1527</UpdateNumber>
+        <ValidationUpdateNumber>-1</ValidationUpdateNumber>
         <UpdateTime>-9223372036854775808</UpdateTime>
     </DataModel>
     <RuleSet id="G}-1e3d0adf:144e222963b:-7c1d">
@@ -2340,7 +2391,7 @@
         <VisibilityFilterEnabled>false</VisibilityFilterEnabled>
         <CreationUpdateNumber>4</CreationUpdateNumber>
     </RuleSet>
-    <ValidationUpdateNumber>1446</ValidationUpdateNumber>
-    <UpdateNumber>1446</UpdateNumber>
+    <ValidationUpdateNumber>-1</ValidationUpdateNumber>
+    <UpdateNumber>1527</UpdateNumber>
     <ResourceBundle>SetAppGlobalsTranslations</ResourceBundle>
 </RuleDictionary>

@@ -106,7 +106,6 @@ public class DateEvents {
         formatter.setTimeZone(calendar.getTimeZone());
         String dateString = formatter.format(calendar.getTime());
 
-
         return dateString;
 
     }
