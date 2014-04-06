@@ -24,11 +24,14 @@ public class DateActions {
      * @author Javin Paul
      */
 
-
+    public static Calendar createCalendar(){
+        GregorianCalendar gcal = new GregorianCalendar();      
+        return gcal.getInstance();
+    }
 
     public static XMLGregorianCalendar createXMLGregorianCalendarDate() {
         // creates a new xgcal date
-        GregorianCalendar gcal = new GregorianCalendar();
+        GregorianCalendar gcal = new GregorianCalendar();       
         XMLGregorianCalendar xgc = null;
         try {
             xgc = DatatypeFactory.newInstance().newXMLGregorianCalendar(gcal);
@@ -100,12 +103,12 @@ public class DateActions {
         return xgc.toGregorianCalendar().getTime();
     }
 
-    public static String GregorianCalToString(XMLGregorianCalendar cal) {
+    public static String XMLGregorianCalendarCalToString(XMLGregorianCalendar xgc) {
         //String dt = util.DateEvents.GregorianCalToString( GregCal) ;
-        Calendar calendar = cal.toGregorianCalendar();
+        Calendar cal = xgc.toGregorianCalendar();
         SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
-        formatter.setTimeZone(calendar.getTimeZone());
-        String dateString = formatter.format(calendar.getTime());
+        formatter.setTimeZone(cal.getTimeZone());
+        String dateString = formatter.format(cal.getTime());
 
         return dateString;
     }
@@ -118,7 +121,7 @@ public class DateActions {
 
     public static String getDateStrings (String type, Calendar inCal ) {
         Calendar cal ;
-        
+        String dateString ;
         if (inCal == null) {
             cal = new GregorianCalendar();
         }    else {
@@ -131,17 +134,17 @@ public class DateActions {
         
          if (type == "full") {
             date_format = new SimpleDateFormat("MMM dd,yyyy HH:mm");
-            return date_format.format(creationDate) ;
+            dateString= date_format.format(creationDate) ;
         } else if (type == "short") {
             date_format = new SimpleDateFormat("MMM dd,yyyy");
-            return  date_format.format(creationDate);
+            dateString=  date_format.format(creationDate);
         } else if (type == "mmddyyyy") {
             date_format = new SimpleDateFormat("MM/dd/yyyy");
-            return  date_format.format(creationDate);
+            dateString=  date_format.format(creationDate);
         } else {
-            return  creationDate.toString() ;
+            dateString=  creationDate.toString() ;
         }
- 
+        return dateString;
  
     }
 
@@ -170,6 +173,9 @@ public class DateActions {
         System.out.println(DateActions.getDateStrings("short",null));
         System.out.println(DateActions.getDateStrings("mmddyyyy",null));
         System.out.println(DateActions.getDateStrings("x",null));
+        
+        System.out.println("createCalendar " + createCalendar().toString());
+        
     }
 }
 
