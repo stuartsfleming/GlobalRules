@@ -77,7 +77,7 @@
    </hash>
    <hash n="oracle.jdeveloper.deploy.dt.DeploymentProfiles">
       <hash n="profileDefinitions">
-         <hash n="dateEvents">
+         <hash n="dateActions">
             <hash n="archiveOptions">
                <value n="hasManifest" v="true"/>
             </hash>
@@ -101,16 +101,16 @@
                   </hash>
                </list>
             </hash>
-            <url n="jarURL" path="deploy/dateEvents.jar"/>
+            <url n="jarURL" path="deploy/dateActions.jar"/>
             <hash n="libraryDependencies">
                <value n="IncludeLibrariesFromOtherContainers" v="true"/>
             </hash>
             <value n="profileClass" v="oracle.jdeveloper.deploy.jar.ArchiveProfile"/>
-            <value n="profileName" v="dateEvents"/>
+            <value n="profileName" v="dateActions"/>
          </hash>
       </hash>
       <list n="profileList">
-         <string v="dateEvents"/>
+         <string v="dateActions"/>
       </list>
    </hash>
    <hash n="oracle.jdeveloper.model.J2eeSettings">

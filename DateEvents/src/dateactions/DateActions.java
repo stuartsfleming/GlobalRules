@@ -1,4 +1,4 @@
-package dateevents;
+package dateactions;
 
 import java.sql.Timestamp;
 
@@ -14,7 +14,7 @@ import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
 
 
-public class DateEvents {
+public class DateActions {
     /** http://javarevisited.blogspot.com/2013/02/convert-xmlgregoriancalendar-to-date-xmlgregoriancalendar-java-example-tutorial.html
      * Java program to convert XMLGregorianCalendar to Date and inverse i.e. java.util.Date
      * to XMLGregorianCalendar. If you are using XJC to create Java classes from XML Schema
@@ -24,7 +24,7 @@ public class DateEvents {
      * @author Javin Paul
      */
 
-    public static XMLGregorianCalendar getXMLGC_DateOnly(XMLGregorianCalendar xGCal) {
+    public static XMLGregorianCalendar xmlGCDateRemoveTstamp(XMLGregorianCalendar xgc) {
         // this removes the timestamp that is appended on an XMLGregorianCalendar
         // input 1964-02-26-05:00  ouput  YYYY-MM-DD
         // XMLGregorianCalendar x = DateEvents.getXMLGC_DateOnly(xGCal) ;
@@ -32,7 +32,7 @@ public class DateEvents {
 
         try {
             x =
-  DatatypeFactory.newInstance().newXMLGregorianCalendarDate(xGCal.getYear(), xGCal.getMonth(), xGCal.getDay(), DatatypeConstants.FIELD_UNDEFINED);
+  DatatypeFactory.newInstance().newXMLGregorianCalendarDate(xgc.getYear(), xgc.getMonth(), xgc.getDay(), DatatypeConstants.FIELD_UNDEFINED);
         } catch (DatatypeConfigurationException e) {
             e.printStackTrace();
         }
@@ -43,22 +43,22 @@ public class DateEvents {
     public static XMLGregorianCalendar createGregorianCalendarDate() {
         // creates a new xgcal date
         GregorianCalendar gcal = new GregorianCalendar();
-        XMLGregorianCalendar xgcal = null;
+        XMLGregorianCalendar xgc = null;
         try {
-            xgcal = DatatypeFactory.newInstance().newXMLGregorianCalendar(gcal);
+            xgc = DatatypeFactory.newInstance().newXMLGregorianCalendar(gcal);
         } catch (DatatypeConfigurationException e) {
             e.printStackTrace();
         }
-        return xgcal;
+        return xgc;
     }
     /*
          * Converts java.util.Date to javax.xml.datatype.XMLGregorianCalendar
          */
 
-    public static XMLGregorianCalendar toXMLGregorianCalendarDate(Date date) {
+    public static XMLGregorianCalendar toXMLGregorianCalendarDate( java.util.Date jud) {
 
         GregorianCalendar gCalendar = new GregorianCalendar();
-        gCalendar.setTime(date);
+        gCalendar.setTime(jud);
         XMLGregorianCalendar xmlCalendar = null;
         try {
             xmlCalendar = DatatypeFactory.newInstance().newXMLGregorianCalendar(gCalendar);
@@ -74,7 +74,7 @@ public class DateEvents {
 
     public static java.sql.Date toJavaSQLDate(XMLGregorianCalendar xgc) {
         //  converts a XMLGregorianCalendar date (xs:date) to a java.sql.date
- 
+
         java.util.Date dt = xgc.toGregorianCalendar().getTime();
         //Then transform the dt to java.sql.date
         java.sql.Date sqlDt = new java.sql.Date(dt.getTime());
@@ -85,18 +85,18 @@ public class DateEvents {
         //  converts a XMLGregorianCalendar date (xs:dateTime) to a java.sql.Timestamp
         // Timestamp t = DateEvents.toJavaTimestamp(xgc) ;
         if (xgc == null) {
-            return null;  
+            return null;
         }
         return new Timestamp(xgc.toGregorianCalendar().getTime().getTime());
 
 
     }
 
-    public static java.util.Date toJavaUtilDate(XMLGregorianCalendar calendar) {
-        if (calendar == null) {
-            return null ;
+    public static java.util.Date toJavaUtilDate(XMLGregorianCalendar xgc) {
+        if (xgc == null) {
+            return null;
         }
-        return calendar.toGregorianCalendar().getTime();
+        return xgc.toGregorianCalendar().getTime();
     }
 
     public static String GregorianCalToString(XMLGregorianCalendar cal) {
@@ -112,27 +112,40 @@ public class DateEvents {
 
     public static java.util.Date getJavaUtilDate() {
         Calendar cal = new GregorianCalendar();
-         java.util.Date creationDate = cal.getTime();
-         return creationDate ;
-        
+        java.util.Date creationDate = cal.getTime(); 
+        return creationDate ;
     }
-    public static Date FormattingExamples () {
-        Calendar cal = new GregorianCalendar();
-         java.util.Date creationDate = cal.getTime();
-        System.out.println("creationDate before format is: " + creationDate.toString());
-        SimpleDateFormat date_format = new SimpleDateFormat("MMM dd,yyyy HH:mm");
-        System.out.println(date_format.format(creationDate));
-        date_format = new SimpleDateFormat("MMM dd,yyyy");
-        System.out.println(date_format.format(creationDate));
-        date_format = new SimpleDateFormat("MM/dd/yyyy");
-        System.out.println(date_format.format(creationDate));
+
+    public static String getDateStrings (String type, Calendar inCal ) {
+        Calendar cal ;
         
-        return creationDate;
-    }
-    
+        if (inCal == null) {
+            cal = new GregorianCalendar();
+        }    else {
+            cal = inCal;
+        }
+        
+        java.util.Date creationDate = cal.getTime();
+        SimpleDateFormat date_format;
+        String s = null;
+        
+         if (type == "full") {
+            date_format = new SimpleDateFormat("MMM dd,yyyy HH:mm");
+            return date_format.format(creationDate) ;
+        } else if (type == "short") {
+            date_format = new SimpleDateFormat("MMM dd,yyyy");
+            return  date_format.format(creationDate);
+        } else if (type == "mmddyyyy") {
+            date_format = new SimpleDateFormat("MM/dd/yyyy");
+            return  date_format.format(creationDate);
+        } else {
+            return  creationDate.toString() ;
+        }
  
-    
-    
+ 
+    }
+
+
     public static void main(String[] args) {
 
 
@@ -145,7 +158,6 @@ public class DateEvents {
         Strin dt = GregorianCalToString(xmlDate);
         System.out.println("Gregorian Calendar in String format: " + dt);
 
-
         //Converting XMLGregorianCalendar to java.util.Date in Java
         Date javaDate = DateEvents.toJavaUtilDate(xmlDate);
         System.out.println("java.util.Date from XMLGregorianCalendar: " + javaDate);
@@ -154,8 +166,10 @@ public class DateEvents {
         java.sql.Timestamp t = DateEvents.toJavaSQLTimestamp(xmlDate);
         System.out.println("java.sql.Timestamp from XMLGregorianCalendar: " + javaDate);
 */
-      System.out.println(  DateEvents.getJavaUtilDate() );
-
+        System.out.println(DateActions.getDateStrings("full",null));
+        System.out.println(DateActions.getDateStrings("short",null));
+        System.out.println(DateActions.getDateStrings("mmddyyyy",null));
+        System.out.println(DateActions.getDateStrings("x",null));
     }
 }
 
