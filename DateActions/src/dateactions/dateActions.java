@@ -14,7 +14,7 @@ import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
 
 
-public class dateActions {
+public class dateActions { 
     /** 
      *JUDate  java.util.date
      * XGC    XMLGregorianCalendar
